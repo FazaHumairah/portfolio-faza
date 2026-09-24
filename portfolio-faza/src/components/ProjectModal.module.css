@@ -340,17 +340,36 @@
 /* ── Responsive ────────────────────────────────── */
 @media (max-width: 600px) {
   .overlay {
-    padding: 12px;
+    padding: 12px 10px 0;
     align-items: flex-end;
+    -webkit-overflow-scrolling: touch;
   }
 
   .modal {
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    max-height: 95vh;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    max-height: 90vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
 
-  .modalHeader, .modalBody {
-    padding: 18px;
+  .modalHeader {
+    padding: 16px 18px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-surface);
+  }
+
+  .closeBtn {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    background: var(--color-border-light);
+    box-shadow: var(--shadow-sm);
+    z-index: 25;
   }
 
   .modalTitle {
