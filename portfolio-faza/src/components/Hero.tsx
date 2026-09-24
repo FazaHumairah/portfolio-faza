@@ -14,7 +14,7 @@ export default function Hero() {
         {/* Text content */}
         <div className={styles.content}>
           <p className={styles.greeting}>
-            Faza Humairah's Portofolio
+            Faza Humairah's Portfolio
           </p>
 
           <h1 className={styles.name}>
