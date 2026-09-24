@@ -1,0 +1,269 @@
+.experience {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header {
+  margin-bottom: 36px;
+}
+
+/* ── Tabs ──────────────────────────────────────── */
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  padding: 10px 16px;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  position: relative;
+  bottom: -1px;
+  border: 1px solid transparent;
+  border-bottom: none;
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.tab:hover {
+  color: var(--color-navy);
+  background: var(--color-border-light);
+}
+
+.tabActive {
+  color: var(--color-accent) !important;
+  background: var(--color-surface) !important;
+  border-color: var(--color-border);
+  border-bottom-color: var(--color-surface);
+}
+
+/* ── Timeline ──────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 2px solid var(--color-surface);
+  box-shadow: 0 0 0 2px var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.dotOrg {
+  background: #7c3aed;
+  box-shadow: 0 0 0 2px #7c3aed;
+}
+
+.line {
+  width: 1px;
+  flex: 1;
+  min-height: 40px;
+  background: var(--color-border);
+  margin-top: 6px;
+  margin-bottom: -2px;
+}
+
+.content {
+  flex: 1;
+  padding-bottom: 36px;
+}
+
+.period {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.card {
+  padding: 18px 20px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 2px 8px rgba(15, 36, 68, 0.06);
+}
+
+.role {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--color-navy);
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+
+.company {
+  font-size: 13.5px;
+  color: var(--color-accent);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Bullet list untuk organisasi */
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  text-align: justify;
+}
+
+.bullet {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+/* ── Awards Grid ────────────────────────────────── */
+.awardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.awardCard {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.awardCard:hover {
+  border-color: rgba(234, 179, 8, 0.4);
+  box-shadow: 0 4px 16px rgba(234, 179, 8, 0.08);
+  transform: translateY(-2px);
+}
+
+.awardIcon {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.awardBody {
+  flex: 1;
+}
+
+.awardYear {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.awardTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
+.awardEvent {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* ── CV Note ────────────────────────────────────── */
+.cvNote {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--color-border);
+}
+
+.cvNote p {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+/* ── Responsive ─────────────────────────────────── */
+@media (max-width: 900px) {
+  .awardsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .tabs {
+    flex-wrap: wrap;
+    border-bottom: none;
+    gap: 8px;
+  }
+
+  .tab {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    bottom: 0;
+  }
+
+  .tabActive {
+    border-color: var(--color-accent) !important;
+    border-bottom-color: var(--color-accent) !important;
+    background: var(--color-accent-muted) !important;
+  }
+
+  .cvNote {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,147 @@
+.about {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.paragraphs p {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Cards column */
+.cardsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px 22px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card:hover {
+  border-color: var(--color-accent-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-muted);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.cardLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 10px;
+}
+
+.cardText {
+  font-size: 14.5px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.thesisTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-navy);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Education */
+.eduItem {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.eduDegree {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-navy);
+  line-height: 1.4;
+}
+
+.eduInstitution {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.eduMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.dot {
+  color: var(--color-border);
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--color-accent);
+  background: var(--color-accent-muted);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 4px 10px;
+  border-radius: 99px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
